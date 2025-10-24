@@ -4,34 +4,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Sanconium</title>
+  <title>Get Started</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  
+
   <style>
     html {
-      background: gray;
+      background: rgb(100,100,255);
     }
 
-    .hoyitenta-style {
+    .log-in-text, .sign-up-text {
       font-family: garamond;
-      color: lightblue;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
-
-  <!-- would be absolutely awesome to make a live, joinable server with people you can wager with. Your profile will advertise your stats -->
 <body>
-  <center class="hoyitenta-style">
-    <h1 id="level">0</h1>
-    <h2>Sanconium:</h2>
-    <h4 id="hoyitenta">0</h4>
-  </center>
-<!--earn button, upgrade sanconium per click, upgrade helper clicks rate-->
+  <div class="log-in-text">
+    <h1>Log-in</h1>
+    <input id="login-username" placeholder="Username">
+    <p>Please enter your username</p><br>
+    <input id="login-password" placeholder="Password">
+    <p>Please enter your password</p>
+    <button id="login-btn">Log in</button>
+    <p id="login-message" style="margin-top: 10px;"></p>
+  </div>
+
   <hr>
-<!--your stats, shop for helpers and visuals -->
-  <script>
-    //level system - the next level costs more and more sanconium! The higher your level, the more likely you are to win a bet!
-  </script>
+  
+  <div class="sign-up-text">
+    <h1>Sign-up</h1>
+    <input id="signup-username" placeholder="Username">
+    <p>Please create your username</p><br>
+    <input id="signup-password" placeholder="Password">
+    <p>Please create your password</p>
+    <button id="signup-btn">Create account</button>
+    <p id="signup-message" style="margin-top: 10px;"></p>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
