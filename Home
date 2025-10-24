@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sanconium</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    html {
+      background: rgb(100,100,255);
+      font-family: garamond;
+    }
+
+    .hoyitenta-style {
+      color: white;
+    }
+
+    #btns {
+      justify-content: center;
+      display: flex;
+      gap: 5%;
+    }
+    
+    .split-container {
+      display: flex;
+      height: 100%;
+    }
+
+    .inbox-bets, .stats-shop {
+      flex: 1; /* Makes each div take up an equal half of the parent */
+      padding: 0px;
+      box-sizing: border-box; /* Ensures padding is included in the total width */
+      overflow: auto; /* Adds scrolling if content overflows */
+      color: white;
+    }    
+  </style>
+</head>
+
+<body>
+  <center class="hoyitenta-style">
+    <h1 id="level">0</h1>
+    <h2>Sanconium:</h2>
+    <h4 id="hoyitenta">0</h4>
+  </center>
+
+  <hr>
+  <div id="btns" class="btn">
+    <button id="earn">Earn</button>
+    <button id="upgrade-spc">Sanconium per Click</button>
+    <button id="upgrade-acr">Auto Click Rate</button>
+    <button id="upgrade-spac">Sanconium per Auto Click</button>
+  </div>
+  <hr>
+
+  <div class="split-container">
+    <div class="stats-shop" style="font-size: 130%;">
+      <!-- stats and shop link -->
+      <p id="spc-stat">Sanconium per Click: </p>
+      <p id="acr-stat">Auto Click Rate (s): </p>
+      <p id="spac-stat">Sanconium per Auto Click: </p>
+      <a href="shop coming soon">Shop soon</a>
+    </div>
+    <div class="inbox-bets" style="background:black; border: solid; border-color: white;">
+      <!-- inbox and bets -->
+      <center>
+        <h4>Inbox</h4>
+        <hr>
+        <p id="message">(messages will show here)</p>
+      </center>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
